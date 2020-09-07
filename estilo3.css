@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+header{
+	opacity: 0.95;
+	width: 90%;
+	margin: 20px auto;
+	text-align: center;
+	height: 150px;
+	background: #A8AB97;
+	display: flex;
+}
+
+
+body {
+ background-image: url("mueble6.jpg");
+ background-color: #cccccc;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ margin: center;
+ align-self: center;
+ background-position: center 0;
+ width: 100vw;
+}
+
+header h1{
+	padding: 50px;
+	height: 100%;
+	font-size: 50px;
+	background-color: #101010;
+	font-family: 'Grandstander', cursive;
+	color: white;
+	font-weight: 100;
+}
+header h1 span{
+	height: 100%;
+	font-family: 'Grandstander', cursive;
+	font-weight: 800;
+	color: #A8AB97;
+}
+
+nav{
+	float: right;
+	width: 70%;
+	align-items: center;
+	display: flex;
+	height: 100%;
+
+}
+nav ul{
+	align-items: center;
+	height: 50%;
+	list-style: none;
+	display: inline-flex;
+	margin: 20px;
+	box-sizing: border-box;
+
+}
+
+nav ul li a{
+	font-size: 20px;
+	padding: 10px;
+	color: white;
+}
+section	{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background: black;
+	margin: 0 5%;
+	width: 70%;
+	height: 500px;
+	align-items:center;
+}
+section h2{
+background: #101010;
+color: white;
+text-align: center;
+}
+section p{
+	color: white;
+	width: 100%;
+	opacity: 0.8;
+	background: #A8AB97;
+	text-align: center;
+	font-family: 'Grandstander', cursive;
+}
+article{
+
+	background: #A8AB97;
+	align-items: center;
+}
+article p{
+	width: 50%;
+	align-content: center;
+	padding: 0 20px;
+	color: white;
+}
+article img{
+	align-self: center;
+	height: 250px;
+	width: 250px;
+}
+
+article p2{
+	color: white;
+	padding: 10px;
+}
+
+
