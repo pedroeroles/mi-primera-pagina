@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+}
+.grid-container{
+	display: grid;
+	grid-template-rows: 150px repeat(10,1fr) 150px;
+	grid-template-columns: repeat(10,1fr) 25%;
+	width: 100%;
+	height: 100%;
+}
+
+header{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background: #A8AB97;
+	color: white;
+	grid-area: 1 / 1 / 2/12 ;
+
+
+	itemname: header;
+}
+
+header nav{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	margin: auto;
+	grid-template-areas: "nav nav nav logos"
+                       "nav nav nav buscador"
+                       "titulo titulo titulo titulo";
+
+}
+
+nav ul{
+	grid-area: nav;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	display: inline-flex;
+	box-sizing: border-box;
+
+}
+nav ul li{
+	padding: 10px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+	color: white;
+	color: white;
+	line-height: 50px;
+	font-size: 18px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+#buscador{
+
+	grid-area: buscador;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 40%;
+	background: #333;
+	color: white;
+	border-width: 7px;
+	border-radius: 10px;
+	border-color: gray;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+	outline: none;
+
+}
+#buscador h1{
+	justify-content: center;
+	border-color: lightgray;
+	border-radius: 30px;
+}
+
+.logos-container{
+	grid-area: logos;
+	display: flex;
+	justify-content: center;
+	vertical-align: center;
+	height: 100%;
+}
+.logos-container ul{
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+	align-content: center;
+	text-align: center;
+	align-items: center;
+
+	padding: 10px;
+
+}
+.logos-container i{
+	color: white;
+}
+.logos-container ul li{
+	display: inline-block;
+	margin: 5px;
+	height: 30px;
+	padding: 10px;
+	color: white;
+	text-align: center;
+}
+.logos-container ul li a{
+
+	display: block;
+	padding: 0 10px;
+	background: #333;
+	color: white;
+	line-height: 50px;
+	font-size: 18px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+#titulo{
+	grid-area: titulo;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	font-family: 'Grandstander', cursive;
+	position: relative;
+	bottom: 20px;
+
+}
+
+#titulo h1{
+	text-align: center;
+	align-content: center;
+	align-self: center;
+	width: 100%
+	margin: auto;
+}
+section{
+	display: flex;
+	vertical-align: center;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background: url(../img/fondoNeutro.jpg);
+	grid-area: 2 / 1 / 12 /12 ;
+	itemname: section;
+}
+section main{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+}
+footer{
+	display: flex;
+	background-color: #A8AB97;
+	color: white;
+	grid-area: 12/ 1 / 13/ 12;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	itemname: footer;
+}
+
+.caja{
+
+	display: flex;
+	background: url(../img/fondoMadera.jpg);
+	width: 40%;
+	height: 80%;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+
+}
+.caja form{
+	width: 50%;
+	margin: 10px;
+	padding: 10px;
+	height: 100%;
+}
+form fieldset{
+	margin: 15px;
+	padding: 15px;
+}
+form fieldset h1{
+	text-align: center;
+	justify-content: center;
+}
+form fieldset span{
+	display: flex;
+	font-size: 20px;
+	justify-content: flex-start;
+}
+form fieldset input{
+	font-size: 20px;
+	padding: 6px;
+}
+#enviar{
+	width: 25%;
+	margin: 5px;
+}
+#reset{
+	width: 25%;
+	margin: 5px;
+}
+a:hover {
+background: #101010;
+opacity: 0.5;
+cursor: pointer;
+}
